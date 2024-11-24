@@ -1,15 +1,18 @@
-import localFont from "next/font/local";
 import "./globals.css";
+import { Geologica, Zen_Kaku_Gothic_New } from "next/font/google";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
+const geologica = Geologica({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-geologica",
+  weight: "variable",
 });
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
+
+const zenKakuNew = Zen_Kaku_Gothic_New({
+  preload: false,
+  subsets: ["latin"],
+  variable: "--font-zen-kaku-new",
+  weight: ["400", "500"],
 });
 
 export const metadata = {
@@ -19,10 +22,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+    <html lang="ja">
+      <body className={`${geologica.variable} ${zenKakuNew.variable}`}>
         {children}
       </body>
     </html>
