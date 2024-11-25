@@ -10,30 +10,26 @@ function LoadingScreen() {
 
     gsap.to(countRef.current, {
       value: 100,
-      duration: 1.2,
+      duration: 3,
       ease: "linear",
       onUpdate: () => {
-        counter.textContent = Math.round(countRef.current.value);
-      },
-      onComplete: () => {
-        // ２秒後にローディング完了
-        gsap.delayedCall(2);
+        counter.textContent = Math.floor(countRef.current.value);
       },
     });
   }, []);
 
   return (
     <>
-      <div className="fixed inset-0 bg-white z-50 flex items-center justify-center">
+      <div className="fixed inset-0 bg-dark-base z-50 flex items-center justify-center">
         <div className="absolute bottom-0 right-[5.5%]">
-          <div className="flex items-center">
+          <div className="flex items-end">
             <div
               ref={counterRef}
-              className="text-large-size text-black-primary font-geologica"
+              className="text-large-size text-white font-geologica tracking-tighter pr-[0.1em]"
             >
               0
             </div>
-            <span className="text-title-size text-black-primary font-geologica">
+            <span className="text-title-size text-white font-geologica pb-[0.1em] lg:pb-[0.5em]">
               %
             </span>
           </div>

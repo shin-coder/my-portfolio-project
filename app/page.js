@@ -1,11 +1,12 @@
 "use client";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import FirstView from "./components/FirstView";
-import LoadingScreen from "./components/LoadingScreen";
 import { scrambleText } from "./utils/scrambleAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import FirstView from "./components/FirstView";
+import LoadingScreen from "./components/LoadingScreen";
+import SecondSection from "./components/AboutMe";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,20 +16,17 @@ export default function Home() {
 
   useEffect(() => {
     const handleLoading = async () => {
-      // GSAPとThree.jsの初期化を待機
-      await Promise.all([
-        // ここに必要な初期化処理を追加
-        new Promise((resolve) => {
-          if (document.readyState === "complete") {
-            resolve();
-          } else {
-            window.addEventListener("load", resolve);
-          }
-        }),
-      ]).then(() => {
+      await new Promise((resolve) => {
+        if (document.readyState === "complete") {
+          resolve();
+        } else {
+          window.addEventListener("load", resolve);
+        }
+      });
+      await new Promise((resolve) => {
         setTimeout(() => {
           setLoading(false);
-        }, 3000);
+        }, 3500);
       });
     };
 
@@ -68,9 +66,10 @@ export default function Home() {
     }
   }, [loading]);
 
-  // if (loading) {
-  //   return <LoadingScreen />; // ローディング画面コンポーネント
-  // }
-
-  return <>{loading ? <LoadingScreen /> : <FirstView />}</>;
+  return (
+    <>
+      {loading ? <LoadingScreen /> : <FirstView />}
+      <SecondSection />
+    </>
+  );
 }

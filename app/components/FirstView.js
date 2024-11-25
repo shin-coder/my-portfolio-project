@@ -33,44 +33,28 @@ function FirstView() {
     const geometry = new THREE.TorusGeometry(10, 5, 24, 130);
 
     /* material */
-    const params = {
+    const material = new THREE.MeshPhysicalMaterial({
       color: 0xffffff,
-      transmission: 1.3,
-      opacity: 1,
+      transmission: 1.6, // 透過率
       metalness: 0,
       roughness: 0,
-      ior: 1.8,
-      thickness: 5,
+      ior: 2, // 屈折率
+      thickness: 5, // 厚み
       specularIntensity: 1,
-      specularColor: 0xffffff,
-      dispersion: 1,
-    };
-
-    const material = new THREE.MeshPhysicalMaterial({
-      color: params.color,
-      transmission: params.transmission,
-      opacity: params.opacity,
-      metalness: params.metalness,
-      roughness: params.roughness,
-      ior: params.ior,
-      thickness: params.thickness,
-      specularIntensity: params.specularIntensity,
-      // specularColor: params.specularColor,
-      side: THREE.DoubleSide,
-      // dispersion: params.dispersion,
+      clearcoat: 1, // クリアコート効果
     });
 
     /* mesh */
     const torus = new THREE.Mesh(geometry, material);
-    torus.rotateY(0.5);
+    torus.rotateY(0.6);
 
     scene.add(torus);
 
     // （addLight）
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 2);
-    directionalLight.position.set(0, 2, 8);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 4);
+    directionalLight.position.set(0, 2, 3);
     scene.add(directionalLight);
-    scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+    scene.add(new THREE.AmbientLight(0xffffff, 2));
 
     // renderer
     const renderer = new THREE.WebGLRenderer({
@@ -96,11 +80,10 @@ function FirstView() {
 
       // アニメーションの追加
       torus.rotation.x += 1 * getDeltaTime;
-      torus.rotation.z += 1.6 * getDeltaTime;
+      torus.rotation.z += 1.8 * getDeltaTime;
     };
 
     animate();
-
     // ajust resize
     const handleResize = () => {
       // リサイズ時に都度更新されるものを記載する
@@ -147,9 +130,9 @@ function FirstView() {
     <>
       <div className="bg-dark-base">
         <div className="absolute inset-0"></div>
-        <div className="absolute inset-0 bg-[url('/images/noise-texture.png')] bg-cover bg-center mix-blend-lighten opacity-[0.2] "></div>
-        <canvas className="webgl absolute z-[3]"></canvas>
-        <main className="px-[5.5%] max-w-[1440px] mx-auto">
+        <div className="absolute inset-0 bg-[url('/images/noise-texture.png')] bg-cover h-[100vh] mix-blend-lighten opacity-[0.2] shadow"></div>
+        <canvas className="webgl absolute z-3"></canvas>
+        <main className="px-[5.5%] max-w-[1440px] mx-auto relative z-9">
           <div className="relative h-[100vh]">
             <div className="fixed top-[3%] left-[50%] translate-x-[-50%] w-[89%] max-w-[calc(1440px-11%)] max-auto mix-blend-exclusion">
               <nav className="flex justify-between items-center w-full text-white font-semibold">
@@ -172,7 +155,7 @@ function FirstView() {
                   </li>
                   <li>
                     <a
-                      href=""
+                      href="/about"
                       className="font-geologica text-base-size scramble-text"
                       data-final-text="ABOUT"
                     >
@@ -204,7 +187,7 @@ function FirstView() {
                 </p>
               </div>
             </div>
-            <div className="text-white font-geologica text-small-size flex justify-between items-center absolute bottom-[2%] left-0 w-full">
+            <div className="text-white font-geologica text-small-size flex justify-between items-center absolute bottom-[3%] left-0 w-full">
               <p className="scramble-text" data-final-text="DESIGN">
                 DESIGN
               </p>

@@ -1,3 +1,49 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .glitch::before,
+  .glitch::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: #1b1b1b;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    z-index: 2;
+  }
+
+  .glitch::before {
+    left: -2px;
+    animation: noiseBefore 3s infinite linear alternate-reverse;
+    text-shadow: -2px 2px rgb(248, 11, 161);
+  }
+
+  .glitch::after {
+    left: 2px;
+    width: 100%;
+    animation: noiseAfter 2s infinite linear alternate-reverse;
+    text-shadow: 2px -2px rgb(11, 213, 248);
+  }
+
+  .text-wiggle-shadow:hover {
+    text-shadow: 30px 13px rgba(246, 0, 153, 0.8),
+      -38px -4px rgba(15, 210, 255, 0.8), -2px -4px rgba(255, 210, 0, 1);
+  }
+}
+
+@layer utilities {
+  .small-arrow-white::after {
+    content: "";
+    display: inline-block;
+    background-image: url(/images/arrow-45deg-white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 0.1em;
+  }
+}
