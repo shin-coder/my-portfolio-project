@@ -11,6 +11,7 @@ module.exports = {
         "dark-base": "#1b1b1b",
         "black-primary": "#333",
         "light-gray": "#999",
+        "white-base": "#f8f8f8",
       },
       fontFamily: {
         // font-wight:100-900 main→600 sub→400

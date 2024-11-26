@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  /* AboutMe.js CSS */
   .glitch::before,
   .glitch::after {
     content: attr(data-text);
@@ -31,6 +32,18 @@
   .text-wiggle-shadow:hover {
     text-shadow: 30px 13px rgba(246, 0, 153, 0.8),
       -38px -4px rgba(15, 210, 255, 0.8), -2px -4px rgba(255, 210, 0, 1);
+  }
+  /* Works.js CSS */
+
+  .bg-blur::before {
+    content: "";
+    background: inherit;
+    filter: blur(6px);
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    left: -5px;
   }
 }
 

@@ -10,7 +10,7 @@ function LoadingScreen() {
 
     gsap.to(countRef.current, {
       value: 100,
-      duration: 3,
+      duration: 2,
       ease: "linear",
       onUpdate: () => {
         counter.textContent = Math.floor(countRef.current.value);

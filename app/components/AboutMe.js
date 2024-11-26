@@ -30,7 +30,6 @@ function AboutMe() {
           </div>
         </section>
       </div>
-      {/* test test test */}
     </>
   );
 }

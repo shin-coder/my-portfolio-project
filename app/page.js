@@ -1,12 +1,12 @@
 "use client";
-import Image from "next/image";
 import { useEffect, useState } from "react";
 import { scrambleText } from "./utils/scrambleAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import FirstView from "./components/FirstView";
 import LoadingScreen from "./components/LoadingScreen";
-import SecondSection from "./components/AboutMe";
+import FirstView from "./components/FirstView";
+import AboutSection from "./components/AboutMe";
+import WorksSection from "./components/Works";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,7 +26,7 @@ export default function Home() {
       await new Promise((resolve) => {
         setTimeout(() => {
           setLoading(false);
-        }, 3500);
+        }, 3000);
       });
     };
 
@@ -51,6 +51,7 @@ export default function Home() {
               scrollTrigger: {
                 trigger: element.closest(".title-wrap"),
                 start: "center bottom",
+                // markers: true,
                 onEnter: () => {
                   scrambleText(element, finalText, 0);
                 },
@@ -68,8 +69,15 @@ export default function Home() {
 
   return (
     <>
-      {loading ? <LoadingScreen /> : <FirstView />}
-      <SecondSection />
+      {loading ? (
+        <LoadingScreen />
+      ) : (
+        <>
+          <FirstView />
+          <AboutSection />
+          <WorksSection />
+        </>
+      )}
     </>
   );
 }
