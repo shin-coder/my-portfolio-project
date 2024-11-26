@@ -187,7 +187,7 @@ function FirstView() {
                 </p>
               </div>
             </div>
-            <div className="text-white font-geologica text-small-size flex justify-between items-center absolute bottom-0 left-0 pb-[3rem] w-full title-wrap">
+            <div className="text-white font-geologica text-small-size flex justify-between items-center absolute bottom-0 left-0 pb-[2rem] w-full title-wrap">
               <p className="scramble-text" data-final-text="DESIGN">
                 DESIGN
               </p>
