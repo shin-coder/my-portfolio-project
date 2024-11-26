@@ -133,7 +133,7 @@ function FirstView() {
         <div className="absolute inset-0 bg-[url('/images/noise-texture.png')] bg-cover h-[100vh] mix-blend-lighten opacity-[0.2] shadow"></div>
         <canvas className="webgl absolute z-3"></canvas>
         <main className="px-[5.5%] max-w-[1440px] mx-auto relative z-9">
-          <div className="relative h-[100vh]">
+          <div className="relative h-[100vh] mt-[-1rem]">
             <div className="fixed top-[3%] left-[50%] translate-x-[-50%] w-[89%] max-w-[calc(1440px-11%)] max-auto mix-blend-exclusion z-[999] title-wrap">
               <nav className="flex justify-between items-center w-full text-white font-semibold">
                 <a
