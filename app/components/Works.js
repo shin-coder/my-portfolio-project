@@ -21,7 +21,7 @@ function Works() {
                     </p>
                     <div className="bg-[url('/images/work-case-01-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0"></div>
                     <div className="w-[min(85vw,500px)] mx-auto mt-[1.5rem] lg:mt-0 lg:w-full lg:grid lg:place-items-center">
-                      <div className="w-[min(18vw,200px)]">
+                      <div className="w-[200px]">
                         <div className="title-wrap">
                           <p
                             className="font-geologica text-medium-size text-white font-[600] uppercase scramble-text"
@@ -58,7 +58,7 @@ function Works() {
                     </p>
                     <div className="bg-[url('/images/work-case-02-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0"></div>
                     <div className="w-[min(85vw,500px)] mx-auto mt-[1.5rem] lg:mt-0 lg:w-full lg:grid lg:place-items-center">
-                      <div className="w-[min(18vw,200px)]">
+                      <div className="w-[200px]">
                         <div className="title-wrap">
                           <p
                             className="font-geologica text-medium-size text-white font-[600] uppercase scramble-text"
@@ -94,7 +94,7 @@ function Works() {
                     </p>
                     <div className="bg-[url('/images/work-case-03-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0"></div>
                     <div className="w-[min(85vw,500px)] mx-auto mt-[1.5rem] lg:mt-0 lg:w-full lg:grid lg:place-items-center">
-                      <div className="w-[min(18vw,200px)]">
+                      <div className="w-[200px]">
                         <div className="title-wrap">
                           <p
                             className="font-geologica text-medium-size text-white font-[600] uppercase scramble-text"
