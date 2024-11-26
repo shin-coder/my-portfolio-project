@@ -13,9 +13,9 @@ function Works() {
           </h1>
           <div className="mt-[30%]">
             <div className="sticky top-0 h-[100vh]">
-              <div className="absolute inset-0 w-full h-full clip-path-rectangle overflow-hidden">
+              <div className="absolute inset-0 w-full h-full  overflow-hidden">
                 <div className="bg-cover bg-no-repeat bg-center w-[100vw] h-[100vh] -z-1 bg-[url('/images/work-case-01-bg.png')] bg-blur ">
-                  <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-[min(85vw,500px)] lg:grid lg:grid-cols-[1fr_min(85vw,500px)_1fr] lg:max-w-[1440px] lg:mx-auto">
+                  <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-[min(85vw,500px)] mt-[-3rem] lg:mt-0 lg:grid lg:grid-cols-[1fr_min(85vw,500px)_1fr] lg:max-w-[1440px] lg:mx-auto">
                     <p className="font-geologica text-small-size text-white w-[min(85vw,500px)] mx-auto lg:w-full lg:pl-[5.5%]">
                       #case_01
                     </p>
@@ -50,9 +50,9 @@ function Works() {
               </div>
             </div>
             <div className="sticky top-0 h-[100vh]">
-              <div className="absolute inset-0 w-full h-full clip-path-rectangle overflow-hidden">
+              <div className="absolute inset-0 w-full h-full  overflow-hidden">
                 <div className="bg-cover bg-no-repeat bg-center w-[100vw] h-[100vh] -z-1 bg-[url('/images/work-case-02-bg.png')] bg-blur">
-                  <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-[min(85vw,500px)] lg:grid lg:grid-cols-[1fr_min(85vw,500px)_1fr] lg:max-w-[1440px] lg:mx-auto">
+                  <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-[min(85vw,500px)] mt-[-3rem] lg:mt-0 lg:grid lg:grid-cols-[1fr_min(85vw,500px)_1fr] lg:max-w-[1440px] lg:mx-auto">
                     <p className="font-geologica text-small-size text-white w-[min(85vw,500px)] mx-auto lg:w-full lg:pl-[5.5%]">
                       #case_02
                     </p>
@@ -86,9 +86,9 @@ function Works() {
               </div>
             </div>
             <div className="sticky top-0 h-[100vh]">
-              <div className="absolute inset-0 w-full h-full clip-path-rectangle overflow-hidden">
+              <div className="absolute inset-0 w-full h-full  overflow-hidden">
                 <div className="bg-cover bg-no-repeat bg-center w-[100vw] h-[100vh] -z-1 bg-[url('/images/work-case-03-bg.png')] bg-blur">
-                  <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-[min(85vw,500px)] lg:grid lg:grid-cols-[1fr_min(85vw,500px)_1fr] lg:max-w-[1440px] lg:mx-auto">
+                  <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] w-full h-[min(85vw,500px)] mt-[-3rem] lg:mt-0 lg:grid lg:grid-cols-[1fr_min(85vw,500px)_1fr] lg:max-w-[1440px] lg:mx-auto">
                     <p className="font-geologica text-small-size text-white w-[min(85vw,500px)] mx-auto lg:w-full lg:pl-[5.5%]">
                       #case_03
                     </p>
