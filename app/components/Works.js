@@ -20,7 +20,7 @@ function Works() {
                       #case_01
                     </p>
                     <div className="bg-[url('/images/work-case-01-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0"></div>
-                    <div className="w-[min(85vw,500px)] mx-auto mt-[1.5rem] lg:mt-0 lg:w-full lg:grid lg:place-items-center">
+                    <div className="w-[min(85vw,500px)] mx-auto mt-[1.5rem] pb-[2rem] lg:pb-0 lg:mt-0 lg:w-full lg:grid lg:place-items-center">
                       <div className="w-[200px]">
                         <div className="title-wrap">
                           <p
