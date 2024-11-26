@@ -23,7 +23,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ja">
-      <body className={`${geologica.variable} ${zenKakuNew.variable}`}>
+      <body
+        className={`${geologica.variable} ${zenKakuNew.variable} h-[100svh]`}
+      >
         {children}
       </body>
     </html>
