@@ -13,6 +13,14 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Home() {
   // loading process
   const [loading, setLoading] = useState(true);
+  const [contentVisible, setContentVisible] = useState(false);
+
+  useEffect(() => {
+    document.body.style.backgroundColor = "#1b1b1b"; // あるいはあなたの暗い背景色
+    return () => {
+      document.body.style.backgroundColor = "";
+    };
+  }, []);
 
   useEffect(() => {
     const handleLoading = async () => {
@@ -23,11 +31,12 @@ export default function Home() {
           window.addEventListener("load", resolve);
         }
       });
-      await new Promise((resolve) => {
-        setTimeout(() => {
-          setLoading(false);
-        }, 3000);
-      });
+
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+
+      setLoading(false);
+
+      setTimeout(() => setContentVisible(true), 100);
     };
 
     handleLoading();
@@ -72,11 +81,16 @@ export default function Home() {
       {loading ? (
         <LoadingScreen />
       ) : (
-        <>
+        <div
+          style={{
+            opacity: contentVisible ? 1 : 0,
+            transition: "opacity 0.3s ease-out",
+          }}
+        >
           <FirstView />
           <AboutSection />
           <WorksSection />
-        </>
+        </div>
       )}
     </>
   );
