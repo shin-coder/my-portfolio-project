@@ -1,6 +1,6 @@
 export const scrambleText = (element, finalText, iteration) => {
   const characters = "qwertyuiop@[asdfghjkl;:]zxcvbnm,./_";
-  const maxIterations = 10;
+  const maxIterations = 8;
   const progress = Math.min(iteration / maxIterations, 1);
 
   const text = finalText
@@ -13,9 +13,13 @@ export const scrambleText = (element, finalText, iteration) => {
     })
     .join("");
 
-  element.innerText = text;
+  if (element.innerText !== text) {
+    element.innerText = text;
+  }
 
   if (iteration < maxIterations) {
-    setTimeout(() => scrambleText(element, finalText, iteration + 1), 50);
+    requestAnimationFrame(() =>
+      scrambleText(element, finalText, iteration + 1)
+    );
   }
 };
