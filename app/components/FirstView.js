@@ -143,23 +143,23 @@ function FirstView() {
                 >
                   _SK
                 </a>
-                <ul className="flex justify-between items-center w-[min(35%,150px)]">
+                <ul className="flex justify-between items-center w-[min(40%,150px)]">
                   <li>
                     <a
                       href=""
-                      className="font-geologica text-base-size scramble-text"
-                      data-final-text="WORK"
+                      className="font-geologica text-base-size font-[400] scramble-text uppercase"
+                      data-final-text="WORKS"
                     >
-                      WORK
+                      works
                     </a>
                   </li>
                   <li>
                     <a
                       href="/about"
-                      className="font-geologica text-base-size scramble-text"
+                      className="font-geologica text-base-size font-[400] scramble-text uppercase"
                       data-final-text="ABOUT"
                     >
-                      ABOUT
+                      about
                     </a>
                   </li>
                 </ul>

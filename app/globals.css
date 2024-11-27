@@ -34,7 +34,6 @@
       -38px -4px rgba(15, 210, 255, 0.8), -2px -4px rgba(255, 210, 0, 1);
   }
   /* Works.js CSS */
-
   .bg-blur::before {
     content: "";
     background: inherit;
@@ -45,13 +44,91 @@
     bottom: -5px;
     left: -5px;
   }
+
+  /* about/About.js CSS */
+  .month-start::after {
+    content: "'19";
+    font-size: 0.75rem;
+  }
+  .month-end::after {
+    content: "'21";
+    font-size: 0.75rem;
+  }
+  .month-start--second::after {
+    content: "'21";
+    font-size: 0.75rem;
+  }
+
+  .month-end--second::after {
+    content: "";
+    font-size: 0.75rem;
+  }
+
+  .accordion::-webkit-details-marker {
+    display: none;
+  }
+
+  .accordion::before,
+  .accordion::after {
+    width: 1px;
+    height: 0.8em;
+    border-radius: 5px;
+    background-color: #333;
+    content: "";
+  }
+
+  .accordion::before {
+    position: absolute;
+    right: 0.5em;
+    rotate: 90deg;
+  }
+
+  .accordion::after {
+    transition: rotate 0.3s;
+  }
+
+  details[open] summary::after {
+    rotate: 90deg;
+  }
+
+  details[open] p {
+    transform: none;
+    opacity: 1;
+  }
+
+  .loop {
+    animation: loop 100s infinite linear;
+  }
 }
 
 @layer utilities {
+  .arrow::after {
+    content: "";
+    background-image: url(/images/arrow-45deg.svg);
+    background-size: cover;
+    background-position: center;
+    width: 0.5em;
+    height: 0.5em;
+    display: inline-block;
+    margin-left: 0.1em;
+  }
+
   .small-arrow-white::after {
     content: "";
     display: inline-block;
     background-image: url(/images/arrow-45deg-white.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 0.6em;
+    height: 0.6em;
+    margin-left: 0.1em;
+  }
+
+  .small-arrow::after {
+    content: "";
+    display: inline-block;
+    background-image: url(/images/arrow-45deg.svg);
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;

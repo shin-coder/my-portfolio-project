@@ -89,11 +89,17 @@ module.exports = {
           "90%": { transform: "skewX(10deg)" },
           "100%": { transform: "skewX(0deg)" },
         },
+
+        loop: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         glitch:
           "noiseBefore 3s infinite linear alternate-reverse, noiseAfter 2s infinite linear alternate-reverse",
         wiggle: "wiggle 0.2s 2",
+        loop: "loop 100s infinite linear",
       },
     },
   },

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { scrambleText } from "./utils/scrambleAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -7,16 +7,18 @@ import LoadingScreen from "./components/LoadingScreen";
 import FirstView from "./components/FirstView";
 import AboutSection from "./components/AboutMe";
 import WorksSection from "./components/Works";
+import SkillsSection from "./components/Skills";
+import Footer from "./components/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
-  // loading process
+  // Loading
   const [loading, setLoading] = useState(true);
   const [contentVisible, setContentVisible] = useState(false);
 
   useEffect(() => {
-    document.body.style.backgroundColor = "#1b1b1b"; // あるいはあなたの暗い背景色
+    document.body.style.backgroundColor = "#1b1b1b";
     return () => {
       document.body.style.backgroundColor = "";
     };
@@ -90,6 +92,8 @@ export default function Home() {
           <FirstView />
           <AboutSection />
           <WorksSection />
+          <SkillsSection />
+          <Footer />
         </div>
       )}
     </>
