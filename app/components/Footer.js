@@ -20,7 +20,7 @@ function Footer() {
                 </a>
               </li>
             </ul>
-            <h2 className="font-geologica text-[2rem]  lg:text-[5rem] font-[600] text-white leading-[1] uppercase mt-[5rem] lg:mt-[8rem] tracking-tight">
+            <h2 className="font-geologica text-[2rem] lg:text-[5rem] font-[600] text-white leading-[1] uppercase mt-[5rem] lg:mt-[8rem] tracking-tight">
               <span>Design to</span>
               <br></br>
               <span>Development</span>
