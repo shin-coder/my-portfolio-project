@@ -47,7 +47,7 @@ function About() {
           </ul>
         </nav>
       </div>
-      <div className="bg-white-base w-full px-[5.5%]">
+      <div className="bg-white-base w-full px-[5.5%] pb-[5rem]">
         <div className="pt-[8rem] max-w-[1440px] mx-auto lg:pt-[10rem]">
           <section className="w-[min(100%,1000px)] mx-auto">
             <div className="relative h-[min(58vw,395px)] bg-white-base title-wrap">

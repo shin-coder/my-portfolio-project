@@ -4,6 +4,7 @@ import { scrambleText } from "@/app/utils/scrambleAnimation";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import AboutLower from "@/app/about/components/About";
+import Footer from "@/app/components/Footer";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -43,6 +44,7 @@ function Page() {
   return (
     <div>
       <AboutLower />
+      <Footer />
     </div>
   );
 }
