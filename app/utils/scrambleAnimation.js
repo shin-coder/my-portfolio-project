@@ -18,8 +18,6 @@ export const scrambleText = (element, finalText, iteration) => {
   }
 
   if (iteration < maxIterations) {
-    requestAnimationFrame(() =>
-      scrambleText(element, finalText, iteration + 1)
-    );
+    setTimeout(() => scrambleText(element, finalText, iteration + 1), 50);
   }
 };
