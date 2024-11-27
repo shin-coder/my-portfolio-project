@@ -24,7 +24,7 @@ function Page() {
           .timeline({
             scrollTrigger: {
               trigger: element.closest(".title-wrap"),
-              start: "center bottom",
+              start: "center 80%",
               // markers: true,
               onEnter: () => {
                 scrambleText(element, finalText, 0);

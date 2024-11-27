@@ -5,27 +5,27 @@ function Skills() {
     <>
       <div className="bg-white-base w-full">
         <div className="max-w-[1440px] px-[5.5%] mx-auto">
-          <h2 className="font-geologica text-base-size uppercase text-black-primary pb-[5rem] font-[400] small-arrow">
+          <h2 className="font-geologica text-base-size uppercase text-black-primary pb-[2rem] lg:pb-[5rem] font-[400] small-arrow">
             Skills
           </h2>
           <h3
-            className="font-geologica text-title-size text-black-primary font-[600] mt-[2rem] tracking-tight leading-[1.2] title-wrap"
+            className="font-geologica text-[2rem] md:text-title-size text-black-primary font-[600] py-[2rem] tracking-tight leading-[1.2] title-wrap"
             data-final-text="Graphic Design × Coding = Creative Dev."
           >
             <div
               className="scramble-text"
               data-final-text="Graphic Design × Coding = "
             >
-              <span>Graphic Design</span> × <sapn>Coding</sapn> ={" "}
+              <span>Graphic Design</span> × <sapn>Coding</sapn>
+              <sapn>=</sapn>{" "}
             </div>
-            {/* <br /> */}
             <div className="scramble-text" data-final-text="Creative Dev.">
               <span>Creative Dev.</span>
             </div>
           </h3>
           <div>
             <ul className="lg:max-w-[600px] lg:mr-0 lg:ml-auto">
-              <li className="mt-[5rem]">
+              <li className="mt-[2rem] lg:mt-[5rem]">
                 <h4 className="font-geologica font-[600] text-black-primary">
                   # Design
                 </h4>
@@ -41,7 +41,7 @@ function Skills() {
                   Photoshop, Illustrator, Figma
                 </small>
               </li>
-              <li className="mt-[5rem]">
+              <li className="mt-[2rem] lg:mt-[3rem]">
                 <h4 className="font-geologica font-[600] text-black-primary">
                   # Creative Coding
                 </h4>
@@ -55,7 +55,7 @@ function Skills() {
                   Swiper.js, GSAP, Three.js
                 </small>
               </li>
-              <li className="mt-[5rem]">
+              <li className="mt-[2rem] lg:mt-[3rem]">
                 <h4 className="font-geologica font-[600] text-black-primary">
                   # Web Development
                 </h4>

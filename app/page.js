@@ -61,7 +61,7 @@ export default function Home() {
             .timeline({
               scrollTrigger: {
                 trigger: element.closest(".title-wrap"),
-                start: "center bottom",
+                start: "center 97.5%",
                 // markers: true,
                 onEnter: () => {
                   scrambleText(element, finalText, 0);
