@@ -17,14 +17,21 @@ function AboutMe() {
               Who is Shin?
             </div>
             <p className="mt-[3rem] text-white font-zenKakuNew text-base-size lg:text-center">
-              デザイン会社にてデザイン業務やコーディング業務を担当している。
+              デザイン会社にてグラフィックデザインとコーディング業務を担当。
+              <br></br>
+              機能性と視覚的な魅力を両立させた実装を行う。
             </p>
-            <div className="text-center mt-[3rem]">
+            <p className="mt-[1.5rem] text-light-gray font-geologica font-[400] text-base-size lg:text-center">
+              Handling graphic design and coding at a design company,<br></br>
+              implementing solutions that balance functionality with visual
+              appeal.
+            </p>
+            <div className="lg:text-center mt-[3rem]">
               <a
                 className="relative inline-block text-white font-geologica font-[400] text-base-size cursor-default hover:animate-wiggle text-wiggle-shadow"
-                href="#"
+                href="/about"
               >
-                View Detail
+                Learn about him
               </a>
             </div>
           </div>

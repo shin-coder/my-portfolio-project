@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ja">
       <body
-        className={`${geologica.variable} ${zenKakuNew.variable} min-h-[100vh]`}
+        className={`${geologica.variable} ${zenKakuNew.variable} overflow-x-hidden`}
       >
         {children}
       </body>

@@ -18,6 +18,6 @@ export const scrambleText = (element, finalText, iteration) => {
   }
 
   if (iteration < maxIterations) {
-    setTimeout(() => scrambleText(element, finalText, iteration + 1), 50);
+    setTimeout(() => scrambleText(element, finalText, iteration + 1), 40);
   }
 };

@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 function About() {
   useEffect(() => {
     AOS.init({
-      duration: 1200,
+      duration: 800,
       easing: "ease-in-out",
       once: true,
     });
@@ -16,7 +16,7 @@ function About() {
 
   return (
     <>
-      <div className="fixed top-[3%] left-[50%] translate-x-[-50%] w-[89%] max-w-[calc(1440px-11%)] max-auto mix-blend-exclusion z-[999] title-wrap">
+      <div className="fixed top-[3%] left-[50%] translate-x-[-50%] w-[89%] max-w-[1440px] max-auto mix-blend-exclusion z-[999] title-wrap">
         <nav className="flex justify-between items-center w-full text-white font-semibold">
           <a
             href="/"
