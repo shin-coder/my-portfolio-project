@@ -28,7 +28,7 @@ function AboutMe() {
             </p>
             <div className="lg:text-center mt-[3rem]">
               <a
-                className="relative inline-block text-white font-geologica font-[400] text-base-size cursor-default hover:animate-wiggle text-wiggle-shadow"
+                className="relative inline-block text-white font-geologica font-[400] text-small-size cursor-default hover:animate-wiggle text-wiggle-shadow"
                 href="/about"
               >
                 Learn about him

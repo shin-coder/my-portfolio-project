@@ -38,10 +38,13 @@ function WorksArchive() {
       </div>
       <div className="bg-white-base w-full px-[5.5%]">
         <div className="max-w-[1440px] mx-auto">
-          <h1 className="font-geologica font-[600] text-large-size text-black-primary uppercase pt-[12rem]">
+          <h1
+            className="font-geologica font-[600] text-large-size text-black-primary uppercase pt-[12rem] scramble-text"
+            data-final-text="WORKS"
+          >
             Works
           </h1>
-          <ul className="mt-[10rem] lg:mt-[20rem] pb-[5rem]">
+          <ul className="mt-[10rem] lg:mt-[20rem] pb-[8rem]">
             <li className="relative lg:item-1 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] z-[1]">
               <div className="flex gap-[1.5rem] flex-col md:flex-row">
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
@@ -73,7 +76,7 @@ function WorksArchive() {
                 </small>
               </div>
             </li>
-            <li className="relative lg:item-2 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[5rem] z-[1]">
+            <li className="relative lg:item-2 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[8rem] z-[1]">
               <div className="flex gap-[1.5rem] flex-col md:flex-row">
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
                   <Image
@@ -104,7 +107,7 @@ function WorksArchive() {
                 </small>
               </div>
             </li>
-            <li className="relative lg:item-3 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[5rem] z-[1]">
+            <li className="relative lg:item-3 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[8rem] z-[1]">
               <div className="flex gap-[1.5rem] flex-col md:flex-row">
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
                   <Image
@@ -135,7 +138,7 @@ function WorksArchive() {
                 </small>
               </div>
             </li>
-            <li className="relative lg:item-4 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[5rem] z-[1]">
+            <li className="relative lg:item-4 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[8rem] z-[1]">
               <div className="flex gap-[1.5rem] flex-col md:flex-row">
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
                   <Image
@@ -166,7 +169,7 @@ function WorksArchive() {
                 </small>
               </div>
             </li>
-            <li className="relative lg:item-5 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[5rem] z-[1]">
+            <li className="relative lg:item-5 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[8rem] z-[1]">
               <div className="flex gap-[1.5rem] flex-col md:flex-row">
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
                   <Image

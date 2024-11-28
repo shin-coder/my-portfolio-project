@@ -1,10 +1,58 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import "@/app/globals.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { scrambleText } from "@/app/utils/scrambleAnimation";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { works } from "@/data/works";
 import Footer from "@/app/components/Footer";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Workpage({ params }) {
+  useEffect(() => {
+    AOS.init({
+      duration: 800,
+      easing: "ease-in-out",
+      once: true,
+    });
+  }, []);
+
+  // Scroll-linked scramble animation
+  useEffect(() => {
+    const setupScrambleAnimations = () => {
+      const scrambleElements = document.querySelectorAll(".scramble-text");
+
+      scrambleElements.forEach((element) => {
+        const finalText = element.dataset.finalText;
+
+        gsap.set(element, {
+          autoAlpha: 0,
+        });
+
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: element.closest(".title-wrap"),
+              start: "10% bottom",
+              // markers: true,
+              onEnter: () => {
+                scrambleText(element, finalText, 0);
+              },
+            },
+          })
+          .to(element, {
+            autoAlpha: 1,
+            duration: 0.5,
+          });
+      });
+    };
+    setupScrambleAnimations();
+  }, []);
+
   const work = works.find((work) => work.id === params.id);
 
   if (!work) {
@@ -13,33 +61,48 @@ export default function Workpage({ params }) {
 
   return (
     <>
+      <div className="fixed top-[3%] left-[50%] translate-x-[-50%] w-[89%] max-w-[1440px] max-auto mix-blend-exclusion z-[999] title-wrap">
+        <nav className="flex justify-between items-center w-full text-white font-semibold">
+          <a
+            href="/"
+            className="font-geologica text-base-size scramble-text"
+            data-final-text="_SK"
+          >
+            _SK
+          </a>
+          <ul className="flex justify-between items-center w-[min(40%,150px)]">
+            <li>
+              <a
+                href="/works-archive"
+                className="font-geologica text-base-size scramble-text font-[400] uppercase"
+                data-final-text="WORKS"
+              >
+                works
+              </a>
+            </li>
+            <li>
+              <a
+                href="/about"
+                className="font-geologica text-base-size scramble-text font-[400] uppercase"
+                data-final-text="ABOUT"
+              >
+                about
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       <div className="bg-white-base">
-        <div className="fixed top-0 left-0 w-full z-50 mix-blend-exclusion">
-          <div className="w-full max-w-[1440px] mx-auto py-[20px] px-[5.5%]">
-            <nav>
-              <ul className="flex justify-between items-center">
-                <li className="font-geologica text-base-size text-white">
-                  <a href="#">_SK</a>
-                </li>
-                <div className="flex gap-[1rem]">
-                  <li className="font-geologica text-small-size text-white">
-                    <a href="#">WORKS</a>
-                  </li>
-                  <li className="font-geologica text-small-size text-white">
-                    <a href="#">ABOUT</a>
-                  </li>
-                </div>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        <div className="w-full max-w-[1440px] mx-auto px-[5.5%] pt-[80px]">
+        <div className="w-full max-w-[1440px] mx-auto px-[5.5%] pt-[8rem]">
           <div className="lg:grid lg:grid-cols-[1fr_min(90%,820px)_1fr] gap-[5%] pb-[80px]">
             <small className="font-geologica font-normal text-base-size">
               {work.id}
             </small>
             <section className="mt-[45px]">
-              <h1 className="font-geologica font-bold text-title-size text-black-primary">
+              <h1
+                className="font-geologica font-bold text-title-size text-black-primary scramble-text"
+                data-final-text={work.title}
+              >
                 {work.title}
               </h1>
               <small className="font-geologica font-light text-small-size text-black-primary">
@@ -118,6 +181,7 @@ export default function Workpage({ params }) {
                     alt="workのイメージ画像1"
                     width={832}
                     height={400}
+                    data-aos="zoom-out"
                   />
                 </div>
                 <div className="flex mt-[3rem] gap-[1.5rem] lg:gap-[9rem] lg:mt-[9rem]">
@@ -127,6 +191,7 @@ export default function Workpage({ params }) {
                       alt="workのイメージ画像2"
                       width={350}
                       height={300}
+                      data-aos="zoom-out"
                     />
                   </div>
                   <div className="mt-[2rem] w-full max-w-[300px] lg:mt-[5rem]">
@@ -135,6 +200,7 @@ export default function Workpage({ params }) {
                       alt="workのイメージ画像3"
                       width={350}
                       height={300}
+                      data-aos="zoom-out"
                     />
                   </div>
                 </div>
@@ -144,6 +210,7 @@ export default function Workpage({ params }) {
                     alt="workのイメージ画像4"
                     width={700}
                     height={450}
+                    data-aos="zoom-out"
                   />
                 </div>
               </div>
