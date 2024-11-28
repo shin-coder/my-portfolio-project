@@ -63,7 +63,7 @@ function WorksArchive() {
               </div>
               <div className="mt-[1rem] flex justify-between items-center">
                 <a
-                  href="/works/furyu"
+                  href="/works/Case_01"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
                   View Detail

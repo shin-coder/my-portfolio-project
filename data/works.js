@@ -1,7 +1,6 @@
 export const works = [
   {
-    id: "furyu",
-    label: "Case_01",
+    id: "Case_01",
     title: "FURYU Brand Site",
     url: "https://sample.com",
     fields: "ブランディング、ライティング、デザイン/実装",
@@ -34,7 +33,12 @@ export const works = [
         },
       ],
     },
-    // image: "/images/portfolio.jpg",
+    images: [
+      "/images/case01-work-image-1.png",
+      "/images/case01-work-image-2.png",
+      "/images/case01-work-image-3.png",
+      "/images/case01-work-image-4.png",
+    ],
   },
 ];
 
