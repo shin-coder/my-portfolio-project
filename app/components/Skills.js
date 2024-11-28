@@ -72,7 +72,7 @@ function Skills() {
             </ul>
           </div>
         </div>
-        <div className="flex items-center w-full h-auto pt-[5rem] pb-[10rem] overflow-hidden">
+        <div className="flex items-center w-full h-auto py-[5rem] overflow-hidden">
           <h3 className="font-geologica text-title-size text-black-primary font-[200] whitespace-nowrap js-textWidth animate-loop py-[2rem]">
             Thank you for visiting Thank you for visiting Thank you for visiting
             Thank you for visiting Thank you for visiting Thank you for visiting

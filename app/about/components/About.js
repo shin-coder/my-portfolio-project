@@ -28,7 +28,7 @@ function About() {
           <ul className="flex justify-between items-center w-[min(40%,150px)]">
             <li>
               <a
-                href=""
+                href="/works-archive"
                 className="font-geologica text-base-size scramble-text font-[400] uppercase"
                 data-final-text="WORKS"
               >

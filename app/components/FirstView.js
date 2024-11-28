@@ -146,7 +146,7 @@ function FirstView() {
                 <ul className="flex justify-between items-center w-[min(40%,150px)]">
                   <li>
                     <a
-                      href=""
+                      href="/works-archive"
                       className="font-geologica text-base-size font-[400] scramble-text uppercase"
                       data-final-text="WORKS"
                     >

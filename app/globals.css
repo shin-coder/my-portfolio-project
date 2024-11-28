@@ -99,9 +99,86 @@
   .loop {
     animation: loop 100s infinite linear;
   }
-}
 
-@layer utilities {
+  /* works/WorksArchive.js */
+  .item-1::before {
+    content: "FURYU\00A0 Brand\00A0 Site\00A0 FURYU\00A0 Brand\00A0 Site";
+    display: inline-block;
+    font-weight: 200;
+    font-size: 15rem;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    animation: loop 100s linear infinite;
+  }
+
+  .item-2::before {
+    content: "My\00A0 Portfolio\00A0 Site\00A0 My\00A0 Portfolio\00A0 Site";
+    display: inline-block;
+    font-weight: 200;
+    font-size: 15rem;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    animation: loop 100s linear infinite;
+  }
+
+  .item-3::before {
+    content: "Green\00A0 Energy\00A0 Company\00A0 Green\00A0 Energy\00A0 Company";
+    display: inline-block;
+    font-weight: 200;
+    font-size: 15rem;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    animation: loop 100s linear infinite;
+  }
+
+  .item-4::before {
+    content: "SUGUTABE\00A0 LP\00A0 Site\00A0 SUGUTABE\00A0 LP\00A0 Site";
+    display: inline-block;
+    font-weight: 200;
+    font-size: 15rem;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    animation: loop 100s linear infinite;
+  }
+
+  .item-5::before {
+    content: "DIGI\00A0 LIG\00A0 LP\00A0 Site\00A0 DIGI\00A0 LIG\00A0 LP\00A0 Site";
+    display: inline-block;
+    font-weight: 200;
+    font-size: 15rem;
+    position: absolute;
+    top: -10%;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: all 0.5s ease-out;
+    animation: loop 100s linear infinite;
+  }
+
+  .item-1:hover::before,
+  .item-2:hover::before,
+  .item-3:hover::before,
+  .item-4:hover::before,
+  .item-5:hover::before {
+    opacity: 0.1;
+  }
+
   .arrow::after {
     content: "";
     background-image: url(/images/arrow-45deg.svg);
@@ -135,5 +212,16 @@
     width: 0.6em;
     height: 0.6em;
     margin-left: 0.1em;
+  }
+}
+
+@layer utilities {
+  @keyframes loop {
+    0% {
+      transform: translateX(-10%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
   }
 }

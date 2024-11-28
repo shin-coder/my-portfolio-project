@@ -26,7 +26,7 @@ function Page() {
             scrollTrigger: {
               trigger: element.closest(".title-wrap"),
               start: "10% bottom",
-              markers: true,
+              // markers: true,
               onEnter: () => {
                 scrambleText(element, finalText, 0);
               },
