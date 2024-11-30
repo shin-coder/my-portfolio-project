@@ -99,12 +99,16 @@ export default function Workpage({ params }) {
               {work.id}
             </small>
             <section className="mt-[45px]">
+              <small className="text-small-size text-black-primary">
+                {work.supplement}
+              </small>
               <h1
                 className="font-geologica font-bold text-title-size text-black-primary scramble-text"
                 data-final-text={work.title}
               >
                 {work.title}
               </h1>
+
               <small className="font-geologica font-light text-small-size text-black-primary">
                 <a
                   href={work.url}
@@ -219,16 +223,16 @@ export default function Workpage({ params }) {
               <div className="absolute bottom-0 right-0 mt-[2rem]  lg:mt-0 lg:right-0">
                 <ul className="flex gap-[1.5rem] lg:flex-col">
                   <li className="font-geologica font-normal text-small-size text-light-gray">
-                    <a href="#">Case_02</a>
+                    <a href="/works/Case_02">Case_02</a>
                   </li>
                   <li className="font-geologica font-normal text-small-size text-light-gray">
-                    <a href="#">Case_03</a>
+                    <a href="/works/Case_03">Case_03</a>
                   </li>
                   <li className="font-geologica font-normal text-small-size text-light-gray">
-                    <a href="#">Case_04</a>
+                    <a href="/works/Case_04">Case_04</a>
                   </li>
                   <li className="font-geologica font-normal text-small-size text-light-gray">
-                    <a href="#">Case_05</a>
+                    <a href="/works/Case_05">Case_05</a>
                   </li>
                 </ul>
               </div>

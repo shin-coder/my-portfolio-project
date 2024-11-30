@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Geologica, Zen_Kaku_Gothic_New } from "next/font/google";
+import SmoothScroll from "./utils/smoothScroll";
 
 const geologica = Geologica({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geologica.variable} ${zenKakuNew.variable} overflow-x-hidden`}
       >
+        <SmoothScroll />
         {children}
       </body>
     </html>

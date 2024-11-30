@@ -19,7 +19,7 @@ function WorksArchive() {
               <a
                 href="/works"
                 className="font-geologica text-base-size scramble-text font-[400] uppercase"
-                data-final-text="WORK"
+                data-final-text="WORKS"
               >
                 works
               </a>
@@ -97,7 +97,7 @@ function WorksArchive() {
               </div>
               <div className="mt-[1rem] flex justify-between items-center">
                 <a
-                  href="#"
+                  href="/works/Case_02"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
                   View Detail
@@ -128,7 +128,7 @@ function WorksArchive() {
               </div>
               <div className="mt-[1rem] flex justify-between items-center">
                 <a
-                  href="#"
+                  href="/works/Case_03"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
                   View Detail
@@ -159,7 +159,7 @@ function WorksArchive() {
               </div>
               <div className="mt-[1rem] flex justify-between items-center">
                 <a
-                  href="#"
+                  href="/works/Case_04"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
                   View Detail
@@ -190,7 +190,7 @@ function WorksArchive() {
               </div>
               <div className="mt-[1rem] flex justify-between items-center">
                 <a
-                  href="#"
+                  href="/works/Case_05"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
                   View Detail

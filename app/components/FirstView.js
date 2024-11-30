@@ -132,39 +132,42 @@ function FirstView() {
         <div className="absolute inset-0"></div>
         <div className="absolute inset-0 bg-[url('/images/noise-texture.png')] bg-cover h-[100vh] mix-blend-lighten opacity-[0.2] shadow"></div>
         <canvas className="webgl absolute z-3"></canvas>
+
+        <header>
+          <div className="fixed top-[3%] left-[50%] translate-x-[-50%] w-[89%] max-w-[1440px] max-auto mix-blend-exclusion z-[999] title-wrap">
+            <nav className="flex justify-between items-center w-full text-white font-semibold">
+              <a
+                href="/"
+                className="font-geologica text-base-size scramble-text"
+                data-final-text="_SK"
+              >
+                _SK
+              </a>
+              <ul className="flex justify-between items-center w-[min(40%,150px)]">
+                <li>
+                  <a
+                    href="/works-archive"
+                    className="font-geologica text-base-size font-[400] scramble-text uppercase"
+                    data-final-text="WORKS"
+                  >
+                    works
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/about"
+                    className="font-geologica text-base-size font-[400] scramble-text uppercase"
+                    data-final-text="ABOUT"
+                  >
+                    about
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
         <main className="px-[5.5%] max-w-[1440px] mx-auto relative z-9 h-[100svh]">
-          <div className="relative h-[100%]">
-            <div className="fixed top-[3%] left-[50%] translate-x-[-50%] w-[89%] max-w-[1440px] max-auto mix-blend-exclusion z-[999] title-wrap">
-              <nav className="flex justify-between items-center w-full text-white font-semibold">
-                <a
-                  href="/"
-                  className="font-geologica text-base-size scramble-text"
-                  data-final-text="_SK"
-                >
-                  _SK
-                </a>
-                <ul className="flex justify-between items-center w-[min(40%,150px)]">
-                  <li>
-                    <a
-                      href="/works-archive"
-                      className="font-geologica text-base-size font-[400] scramble-text uppercase"
-                      data-final-text="WORKS"
-                    >
-                      works
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="/about"
-                      className="font-geologica text-base-size font-[400] scramble-text uppercase"
-                      data-final-text="ABOUT"
-                    >
-                      about
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
+          <div className="relative h-full">
             <div className="inline-block mt-[12.5rem] title-wrap">
               <p
                 className="text-white text-large-size font-geologica font-[600] tracking-tight leading-none scramble-text"
