@@ -83,7 +83,7 @@ export const works = [
   },
   {
     id: "Case_03",
-    title: "Green Energy Company",
+    title: "Green Energy",
     url: "https://sample.com",
     supplement: "※架空のサイト",
     fields: "デザイン/実装",
