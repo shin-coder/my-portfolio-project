@@ -2,7 +2,7 @@ export const works = [
   {
     id: "Case_01",
     title: "FURYU Brand Site",
-    url: "https://sample.com",
+    url: "https://furyu-craft.com/",
     fields: "ブランディング、ライティング、デザイン/実装",
     tech: "HTML/CSS JavaScript Swiper GSAP",
     project:
@@ -43,7 +43,7 @@ export const works = [
   {
     id: "Case_02",
     title: "Portfolio Site",
-    url: "https://sample.com",
+    url: "/",
     fields: "ライティング、デザイン/実装",
     tech: "Next.js tailwindCSS Three.js GSAP AOS Lenis.js",
     project:
@@ -84,7 +84,7 @@ export const works = [
   {
     id: "Case_03",
     title: "Green Energy",
-    url: "https://sample.com",
+    url: "https://cf737610.cloudfree.jp/",
     supplement: "※架空のサイト",
     fields: "デザイン/実装",
     tech: "HTML/CSS(Sass) JavaScript PHP Swiper GSAP WordPress",
@@ -126,7 +126,7 @@ export const works = [
   {
     id: "Case_04",
     title: "SUGUTABE",
-    url: "https://sample.com",
+    url: "https://midterm-assignment.vercel.app/",
     supplement: "※スクールの課題",
     fields: "デザイン/実装",
     tech: "HTML/CSS(Sass) JavaScript GSAP",
@@ -168,7 +168,7 @@ export const works = [
   {
     id: "Case_05",
     title: "LIG LP",
-    url: "https://sample.com",
+    url: "https://www.figma.com/design/UJF6OLOKVVpiricFj7Axfq/%E7%84%A1%E9%A1%8C?node-id=0-1&t=5QWdURiVq7g5qaT0-1",
     supplement: "※スクールの課題",
     fields: "デザイン",
     tech: "Figma",

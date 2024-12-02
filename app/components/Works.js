@@ -38,7 +38,7 @@ function Works() {
                         </div>
 
                         <a
-                          href="#"
+                          href="/works/Case_01"
                           className="inline-block font-geologica text-base-size text-white font-[400] mt-[1rem]"
                         >
                           view more
@@ -74,7 +74,7 @@ function Works() {
                           </small>
                         </div>
                         <a
-                          href="#"
+                          href="/works/Case_02"
                           className="inline-block font-geologica text-base-size text-white font-[400] mt-[1rem]"
                         >
                           view more
@@ -110,7 +110,7 @@ function Works() {
                           </small>
                         </div>
                         <a
-                          href="#"
+                          href="/works/Case_03"
                           className="inline-block font-geologica text-base-size text-white font-[400] mt-[1rem]"
                         >
                           view more
