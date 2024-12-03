@@ -58,12 +58,23 @@ function About() {
                 About
               </h2>
               <div className="absolute top-0 left-[50%] translate-x-[-50%] max-w-[300px] h-auto">
-                <Image
+                {/* <Image
                   src="/images/prof-image.png"
                   width={300}
                   height={395}
                   alt="自分のプロフィール写真"
                   data-aos="zoom-out"
+                /> */}
+                <video
+                  className="w-[min(100%,300px)] h-[58vw] max-h-[395px] object-cover"
+                  src="/video/typing.mp4"
+                  width={1920}
+                  height={1080}
+                  autoPlay
+                  muted
+                  playsInline
+                  loop
+                  controls={false}
                 />
               </div>
               <h2
