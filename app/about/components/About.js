@@ -157,9 +157,9 @@ function About() {
                   <li>Astro</li>
                 </ul>
                 <p className="mt-[1rem] font-zenKakuNew text-black-primary leading-[1.6] text-base-size">
-                  WordPressで独自のテーマ開発が可能。最近は、Dockerでの環境構築の学習も行なっていいる。
+                  WordPressで独自のテーマ開発が可能。最近は、Dockerでの環境構築の学習も行なっている。
                   <br />
-                  モダンな開発も出来るようNext.jsやAstro、TailwindCSS,
+                  モダンな開発も出来るようNext.jsやAstro、TailwindCSS、
                   TypeScriptを活用したJamStack開発の学習を行っている。
                 </p>
               </li>
@@ -228,7 +228,7 @@ function About() {
                   メディア事業部として、記事作成や公式サイトやSNS運用（画像作成やアカウントの運用）、
                   撮影補助などを行う。
                   <br />
-                  2022年7月に同社の制作部に異動。ポスターやロゴ、ノベルティ、名刺の作成を行う。2024年8月からWEB事業部のコーダーとしても参画。主に美容サイトの実装を担当。
+                  2022年7月に同社の制作部に異動。ポスターやロゴ、ノベルティ、名刺の作成を行う。2024年8月からWEB事業部のコーダーも兼任。主に美容サイトの実装を担当。
                 </p>
               </li>
             </ul>
