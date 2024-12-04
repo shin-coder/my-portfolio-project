@@ -125,7 +125,7 @@ function Works() {
         </section>
         <div className="w-full h-[30vh] grid place-items-center bg-white-base">
           <a
-            href="#"
+            href="/works-archive"
             className="font-geologica text-base-size font-[400] inline-block border border-black-primary py-[1em] px-[2em] rounded-[100px] hover:bg-dark-base hover:text-white transition duration-500 ease-in-out"
           >
             ・View All Works
