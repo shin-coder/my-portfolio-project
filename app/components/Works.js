@@ -1,6 +1,60 @@
+import { useEffect } from "react";
 import "../globals.css";
+import gsap from "gsap";
 
 function Works() {
+  useEffect(() => {
+    gsap.utils.toArray(".workThum").forEach((thum) => {
+      gsap.set(thum, {
+        rotateX: 0,
+        rotateY: 0,
+        rotateZ: 0,
+        perspective: 1000,
+      });
+
+      const mousemoveHandler = (e) => {
+        const rect = thum.getBoundingClientRect();
+        const offsetX = e.clientX - rect.left;
+        const offsetY = e.clientY - rect.top;
+        const px = offsetX / thum.offsetWidth;
+        const py = offsetY / thum.offsetHeight;
+        const rx = -10 + 20 * px;
+        const ry = 10 - 20 * py;
+
+        gsap.to(thum, {
+          duration: 0.5,
+          rotationY: rx,
+          rotationX: ry,
+          rotationZ: 0,
+          scale: 1.05,
+          transformPerspective: 1000,
+          ease: "quad.out",
+        });
+      };
+
+      const mouseoutHandler = () => {
+        gsap.to(thum, {
+          duration: 0.5,
+          rotationY: 0,
+          rotationX: 0,
+          rotationZ: 0,
+          scale: 1,
+          transformPerspective: 1000,
+          ease: "quad.out",
+        });
+      };
+
+      thum.addEventListener("mouseover", function () {
+        this.addEventListener("mousemove", mousemoveHandler);
+      });
+
+      thum.addEventListener("mouseout", function () {
+        this.removeEventListener("mousemove", mousemoveHandler);
+        mouseoutHandler();
+      });
+    });
+  }, []);
+
   return (
     <>
       <div className="w-full bg-dark-base">
@@ -19,7 +73,7 @@ function Works() {
                     <p className="font-geologica text-small-size text-white w-[min(85vw,500px)] mx-auto lg:w-full lg:pl-[5.5%]">
                       #case_01
                     </p>
-                    <div className="bg-[url('/images/work-case-01-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0"></div>
+                    <div className="bg-[url('/images/work-case-01-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0 workThum"></div>
                     <div className="w-[min(85vw,500px)] mx-auto mt-[1.5rem] pb-[3rem] lg:pb-0 lg:mt-0 lg:w-full lg:grid lg:place-items-center">
                       <div className="w-[200px]">
                         <div className="title-wrap">
@@ -56,7 +110,7 @@ function Works() {
                     <p className="font-geologica text-small-size text-white w-[min(85vw,500px)] mx-auto lg:w-full lg:pl-[5.5%]">
                       #case_02
                     </p>
-                    <div className="bg-[url('/images/work-case-02-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0"></div>
+                    <div className="bg-[url('/images/work-case-02-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0 workThum"></div>
                     <div className="w-[min(85vw,500px)] mx-auto mt-[1.5rem] pb-[3rem] lg:pb-0 lg:mt-0 lg:w-full lg:grid lg:place-items-center">
                       <div className="w-[200px]">
                         <div className="title-wrap">
@@ -92,7 +146,7 @@ function Works() {
                     <p className="font-geologica text-small-size text-white w-[min(85vw,500px)] mx-auto lg:w-full lg:pl-[5.5%]">
                       #case_03
                     </p>
-                    <div className="bg-[url('/images/work-case-03-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0"></div>
+                    <div className="bg-[url('/images/work-case-03-thum.png')] w-[min(85vw,500px)] h-[min(85vw,500px)] bg-cover bg-center mx-auto mt-[24px] lg:mt-0 workThum"></div>
                     <div className="w-[min(85vw,500px)] mx-auto mt-[1.5rem] pb-[3rem] lg:pb-0 lg:mt-0 lg:w-full lg:grid lg:place-items-center">
                       <div className="w-[200px]">
                         <div className="title-wrap">
