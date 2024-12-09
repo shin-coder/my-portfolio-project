@@ -274,14 +274,15 @@ function About() {
                 <p className="font-zenKakuNew text-black-primary text-base-size leading-[1.6] px-[1em] pb-[2em] translate-y-[-1em] opacity-0 lg:max-w-[45rem]">
                   実装未経験から1年半でHTML/CSS、JavaScript、WordPressだけでなく、GSAPやThree.jsなどのJavaScriptライブラリなどの学習にも意欲的に取り組んだ。
                   <br></br>
-                  日頃からZennといったブログや比較的新しい技術情報を発信しているYouTubeチャンネルから情報をNotionに内容をまとめたり、自身で簡単なサイトなどを作成したりした。卒業後も学習を続け、最近はNext.jsやtailwindCSS、TypeScriptといったモダンな技術に関する学習を行なっている。
+                  日頃からZennといったブログや比較的新しい技術情報を発信しているYouTubeチャンネルから情報をNotionに内容をまとめたり、自身で簡単なサイトなどを作成したりした。
                   <br></br>
-                  <a
+                  卒業後も学習を続け、最近はNext.jsやtailwindCSS、TypeScriptといったモダンな技術に関する学習を行なっている。
+                  {/* <a
                     href="https://www.notion.so/shin03/Dev-memo-11aa2460db0342e48d0231420c32c6d7?pvs=4"
                     className="font-zenKakuNew text-light-gray text-samll-size leading-[1.6] underline mt-[1rem] inline-block"
                   >
                     学習用のNotionはこちら
-                  </a>
+                  </a> */}
                 </p>
               </details>
               <details className="mb-[0.5em] border-light-gray border-b">
