@@ -17,7 +17,7 @@ function WorksArchive() {
           <ul className="flex justify-between items-center w-[min(40%,150px)]">
             <li>
               <a
-                href="/works"
+                href="/works-archive"
                 className="font-geologica text-base-size scramble-text font-[400] uppercase"
                 data-final-text="WORKS"
               >
@@ -46,7 +46,10 @@ function WorksArchive() {
           </h1>
           <ul className="mt-[10rem] lg:mt-[20rem] pb-[8rem]">
             <li className="relative lg:item-1 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] z-[1]">
-              <div className="flex gap-[1.5rem] flex-col md:flex-row">
+              <a
+                className="flex gap-[1.5rem] flex-col md:flex-row"
+                href="/works/Case_01"
+              >
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
                   <Image
                     src="/images/work-archive-01-1.png"
@@ -63,21 +66,25 @@ function WorksArchive() {
                     height={160}
                   />
                 </div>
-              </div>
-              <div className="mt-[1rem] flex justify-between items-center">
+              </a>
+              <div className="mt-[1rem] flex justify-between items-end">
                 <a
                   href="/works/Case_01"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
-                  View Detail
+                  view detail
                 </a>
                 <small className="font-geologica font-[200] text-small-size text-black-primary">
+                  client work<br></br>
                   (01 FURYU Brand Site)
                 </small>
               </div>
             </li>
             <li className="relative lg:item-2 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[8rem] z-[1]">
-              <div className="flex gap-[1.5rem] flex-col md:flex-row">
+              <a
+                className="flex gap-[1.5rem] flex-col md:flex-row"
+                href="/works/Case_02"
+              >
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
                   <Image
                     src="/images/work-archive-02-1.png"
@@ -94,21 +101,25 @@ function WorksArchive() {
                     height={160}
                   />
                 </div>
-              </div>
+              </a>
               <div className="mt-[1rem] flex justify-between items-center">
                 <a
                   href="/works/Case_02"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
-                  View Detail
+                  view detail
                 </a>
                 <small className="font-geologica font-[200] text-small-size text-black-primary">
+                  private work<br></br>
                   (02 My Portfolio Site)
                 </small>
               </div>
             </li>
             <li className="relative lg:item-3 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[8rem] z-[1]">
-              <div className="flex gap-[1.5rem] flex-col md:flex-row">
+              <a
+                className="flex gap-[1.5rem] flex-col md:flex-row"
+                href="/works/Case_03"
+              >
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
                   <Image
                     src="/images/work-archive-03-1.png"
@@ -125,21 +136,25 @@ function WorksArchive() {
                     height={160}
                   />
                 </div>
-              </div>
+              </a>
               <div className="mt-[1rem] flex justify-between items-center">
                 <a
                   href="/works/Case_03"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
-                  View Detail
+                  view detail
                 </a>
                 <small className="font-geologica font-[200] text-small-size text-black-primary">
+                  private work<br></br>
                   (03 Green Energy Company)
                 </small>
               </div>
             </li>
             <li className="relative lg:item-4 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[8rem] z-[1]">
-              <div className="flex gap-[1.5rem] flex-col md:flex-row">
+              <a
+                className="flex gap-[1.5rem] flex-col md:flex-row"
+                href="/works/Case_04"
+              >
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
                   <Image
                     src="/images/work-archive-04-1.png"
@@ -156,21 +171,25 @@ function WorksArchive() {
                     height={160}
                   />
                 </div>
-              </div>
+              </a>
               <div className="mt-[1rem] flex justify-between items-center">
                 <a
                   href="/works/Case_04"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
-                  View Detail
+                  view detail
                 </a>
                 <small className="font-geologica font-[200] text-small-size text-black-primary">
+                  school assignment<br></br>
                   (04 SUGUTABE LP Site)
                 </small>
               </div>
             </li>
             <li className="relative lg:item-5 lg:overflow-hidden lg:mx-[calc(50%-50vw)] lg:px-[calc(50vw-50%)] mt-[3rem] lg:mt-[8rem] z-[1]">
-              <div className="flex gap-[1.5rem] flex-col md:flex-row">
+              <a
+                className="flex gap-[1.5rem] flex-col md:flex-row"
+                href="/works/Case_05"
+              >
                 <div className="w-[15rem] h-[10rem] aspect-[3/2] md:w-[28rem] md:h-auto">
                   <Image
                     src="/images/work-archive-05-1.png"
@@ -187,15 +206,16 @@ function WorksArchive() {
                     height={160}
                   />
                 </div>
-              </div>
+              </a>
               <div className="mt-[1rem] flex justify-between items-center">
                 <a
                   href="/works/Case_05"
                   className="font-geologica font-[400] text-base-size text-black-primary"
                 >
-                  View Detail
+                  view detail
                 </a>
                 <small className="font-geologica font-[200] text-small-size text-black-primary">
+                  school assignment<br></br>
                   (05 DIGI LIG LP Site)
                 </small>
               </div>

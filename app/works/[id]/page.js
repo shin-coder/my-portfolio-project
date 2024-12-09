@@ -95,8 +95,8 @@ export default function Workpage({ params }) {
       <div className="bg-white-base">
         <div className="w-full max-w-[1440px] mx-auto px-[5.5%] pt-[8rem]">
           <div className="lg:grid lg:grid-cols-[1fr_min(90%,820px)_1fr] gap-[5%] pb-[80px]">
-            <small className="font-geologica font-normal text-base-size">
-              {work.id}
+            <small className="font-geologica font-normal text-base-size lowercase">
+              #{work.id}
             </small>
             <section className="mt-[45px]">
               <small className="text-small-size text-black-primary">
@@ -189,7 +189,7 @@ export default function Workpage({ params }) {
                   />
                 </div>
                 <div className="flex mt-[3rem] gap-[1.5rem] lg:gap-[9rem] lg:mt-[9rem]">
-                  <div className="w-full max-w-[300px]">
+                  <div className="w-full max-w-[350px] h-[180px]">
                     <Image
                       src={work.images[1]}
                       alt="workのイメージ画像2"
@@ -198,7 +198,7 @@ export default function Workpage({ params }) {
                       data-aos="zoom-out"
                     />
                   </div>
-                  <div className="mt-[2rem] w-full max-w-[300px] lg:mt-[5rem]">
+                  <div className="mt-[2rem] w-full max-w-[350px] lg:mt-[5rem]">
                     <Image
                       src={work.images[2]}
                       alt="workのイメージ画像3"

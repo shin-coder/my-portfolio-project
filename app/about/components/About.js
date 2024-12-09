@@ -159,8 +159,7 @@ function About() {
                 <p className="mt-[1rem] font-zenKakuNew text-black-primary leading-[1.6] text-base-size">
                   WordPressで独自のテーマ開発が可能。最近は、Dockerでの環境構築の学習も行なっている。
                   <br />
-                  モダンな開発も出来るようNext.jsやAstro、TailwindCSS、
-                  TypeScriptを活用したJamStack開発の学習を行っている。
+                  モダンな開発も出来るようNext.jsやAstro、TailwindCSS、TypeScriptを活用したJamStack開発の学習を行っている。
                 </p>
               </li>
               <li>
@@ -273,8 +272,16 @@ function About() {
                   01) 高い学習意欲と適応力
                 </summary>
                 <p className="font-zenKakuNew text-black-primary text-base-size leading-[1.6] px-[1em] pb-[2em] translate-y-[-1em] opacity-0 lg:max-w-[45rem]">
-                  未経験から1年でHTML/CSS、JavaScriptだけでなく、AstroやNext.jsといったモダンな技術にも積極的に学習を行ってきた。また、様々なプロジェクトに対応出来るよう、JavaScriptライブラリであるGSAPやthree.jsに関する学習も行った。
-                  実際のプロジェクトでも、様々な技術を取り扱うため、この強みを活かしていきたい。
+                  実装未経験から1年半でHTML/CSS、JavaScript、WordPressだけでなく、GSAPやThree.jsなどのJavaScriptライブラリなどの学習にも意欲的に取り組んだ。
+                  <br></br>
+                  日頃からZennといったブログや比較的新しい技術情報を発信しているYouTubeチャンネルから情報をNotionに内容をまとめたり、自身で簡単なサイトなどを作成したりした。卒業後も学習を続け、最近はNext.jsやtailwindCSS、TypeScriptといったモダンな技術に関する学習を行なっている。
+                  <br></br>
+                  <a
+                    href="https://www.notion.so/shin03/Dev-memo-11aa2460db0342e48d0231420c32c6d7?pvs=4"
+                    className="font-zenKakuNew text-light-gray text-samll-size leading-[1.6] underline mt-[1rem] inline-block"
+                  >
+                    学習用のNotionはこちら
+                  </a>
                 </p>
               </details>
               <details className="mb-[0.5em] border-light-gray border-b">
@@ -282,8 +289,9 @@ function About() {
                   02) ユーザー中心の問題解決力
                 </summary>
                 <p className="font-zenKakuNew text-black-primary text-base-size leading-[1.6] px-[1em] pb-[2em] translate-y-[-1em] opacity-0 lg:max-w-[45rem]">
-                  クライアントから名刺専用のサイトが欲しいという声や業務対応のマニュアルがないことを受け、発注におけるフローやQ&Aを組み込んだサイトを作成。
-                  結果、やりとりがスムーズになったことに加え、サイトのお陰で他のお客様にも紹介しやすくなったという声を頂けた。
+                  名刺デザイン・印刷業務に従事する中で、クライアントからの問い合わせ対応において、統一されたマニュアルやルールが整備されていない課題に直面していた。特に、頻出する質問や発注手順に関する問い合わせが多く、効率的な対応が困難な状況だった。
+                  <br></br>
+                  この状況を改善するため、名刺専用のサイトを企画・作成。発注フローの可視化やよくある質問へのQ&A機能を実装し、クライアントとのコミュニケーションをスムーズにする仕組みを構築した。
                 </p>
               </details>
               <details className="mb-[0.5em] border-light-gray border-b">
@@ -291,7 +299,9 @@ function About() {
                   03) デザインに対する知識
                 </summary>
                 <p className="font-zenKakuNew text-black-primary text-base-size leading-[1.6] px-[1em] pb-[2em] translate-y-[-1em] opacity-0 lg:max-w-[45rem]">
-                  現職がグラフィックデザイナーのため、文字組みや文字詰め、グラフィッカルな表現に対する知見がある。プロジェクトでは、デザイナーとのやりとりが多いため、デザインの意図を考慮した実装を行える。
+                  現職のグラフィックデザイナーとしての経験を活かし、タイポグラフィーの基礎となる文字組みや文字詰め、視覚的階層構造の設計など、デザインの本質的な要素に対する深い理解がある。
+                  <br></br>
+                  そのため、各プロジェクトでは、デザイナーとの密接なコミュニケーションを通じて、クリエイティブの意図や細部へのこだわりを十分に理解し、それらを損なうことなく実装に反映させることができる。
                 </p>
               </details>
             </ul>
@@ -309,10 +319,11 @@ function About() {
                   Three Years Later
                 </h3>
                 <p className="mt-[1rem] font-zenKakuNew text-black-primary leading-[1.6] text-base-size lg:max-w-[45rem]">
-                  大規模なプロジェクトにも参画出来るようになりたい。<br></br>
-                  そのために、デザインカンプの仕様に沿った正確性と他のエンジニアでも更新しやすい保守性の高い実装を目指していく。
+                  フロントエンド開発の専門性を高め、大規模プロジェクトでも即戦力として活躍できるエンジニアを目指したい。
                   <br></br>
-                  また、サーバーサイド側の知見も身につけフルスタックでの開発が行えるようになりたい。
+                  具体的には、アクセシビリティや新しいWeb標準に準拠したコーディング、パフォーマンス最適化、そしてTypeScriptやReactを活用したコンポーネント設計のベストプラクティスを習得する。
+                  <br></br>
+                  また、Jestなどのテストツールを活用し、品質担保の観点からもプロジェクトに貢献できるようになりたい。
                 </p>
               </li>
               <li className="mt-[3rem]">
@@ -320,9 +331,11 @@ function About() {
                   Five Years Later
                 </h3>
                 <p className="mt-[1rem] font-zenKakuNew text-black-primary leading-[1.6] text-base-size lg:max-w-[45rem]">
-                  エンジニアとして、より高い技術力とそれを社内に還元出来るような存在になりたい。
+                  フロントエンド領域のテックリードとして、プロジェクト全体の技術的な意思決定や設計に関与できる立場を目指したい。
                   <br></br>
-                  プロジェクトではメインの実装担当並びに演出の考案、機能面での設計や技術選定など、プロジェクトマネジメントとして関われる人材を目指していく。
+                  具体的には、大規模なWebサイトの機能性設計や技術選定、ビルドの最適化など、プロジェクトの技術基盤に関わる重要な判断を担当。
+                  <br></br>
+                  また、社内の技術力向上にも貢献し、技術共有会の企画や社内ライブラリの整備なども推進していく。
                 </p>
               </li>
             </ul>

@@ -128,7 +128,7 @@ function Works() {
             href="/works-archive"
             className="font-geologica text-base-size font-[400] inline-block border border-black-primary py-[1em] px-[2em] rounded-[100px] hover:bg-dark-base hover:text-white transition duration-500 ease-in-out"
           >
-            ・View All Works
+            ・view all works
           </a>
         </div>
       </div>
