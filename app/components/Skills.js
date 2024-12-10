@@ -76,6 +76,7 @@ function Skills() {
           <h3 className="font-geologica text-title-size text-black-primary font-[200] whitespace-nowrap js-textWidth animate-loop py-[2rem]">
             Thank you for visiting Thank you for visiting Thank you for visiting
             Thank you for visiting Thank you for visiting Thank you for visiting
+            Thank you for visiting Thank you for visiting Thank you for visiting
           </h3>
         </div>
       </div>

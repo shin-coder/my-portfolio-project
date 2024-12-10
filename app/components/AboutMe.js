@@ -6,7 +6,7 @@ function AboutMe() {
     <>
       <div className="bg-dark-base">
         <section className="relative max-w-[1440px] mx-auto h-[100vh] px-[5.5%]">
-          <div className="font-geologica font-[400] text-small-size text-white pt-[3rem] small-arrow-white">
+          <div className="font-geologica font-[400] text-small-size text-white pt-[4rem] small-arrow-white">
             MY PROFILE
           </div>
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
