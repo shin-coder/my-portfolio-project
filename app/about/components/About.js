@@ -1,15 +1,15 @@
-"use client";
-import React, { useEffect } from "react";
-import Image from "next/image";
-import "@/app/globals.css";
-import AOS from "aos";
-import "aos/dist/aos.css";
+'use client';
+import React, { useEffect } from 'react';
+import Image from 'next/image';
+import '@/app/globals.css';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 function About() {
   useEffect(() => {
     AOS.init({
       duration: 800,
-      easing: "ease-in-out",
+      easing: 'ease-in-out',
       once: true,
     });
   }, []);
@@ -242,19 +242,19 @@ function About() {
             <ul className="lg:mt-[5rem] lg:flex lg:flex-wrap lg:justify-between">
               <li className="mt-[3rem] w-full lg:max-w-[28vw]">
                 <p className="font-zenKakuNew text-black-primary leading-[1.6] text-base-size flex gap-[1rem] before:content-['01)'] before:text-[0.875rem]">
-                  機能的でシンプルなデザインを好むため、静止画としても美しいことを目指した実装を心がけている。
-                  <br />
-                  また、デザインの意図を正確に読み解き、実装に反映させることにも重きを置いている。
+                  機能的でシンプルなデザインを好むため、静止画としても美しく見えるよう実装を心がけている。
+                  <br></br>
+                  また、デザインの意図を把握し、その本質を実装に反映させることを重視している。
                 </p>
               </li>
               <li className="mt-[3rem] w-full lg:max-w-[28vw]">
                 <p className="font-zenKakuNew text-black-primary leading-[1.6] text-base-size flex gap-[1rem] before:content-['02)'] before:text-[0.875rem]">
-                  動きのあるサイトや演出も好きだが、無闇に取り入れるのではなく、目的に沿った体験作りとして組み込むことを第一に考えている。
+                  動的な演出やインタラクティブな要素も好むが、目的に沿った体験設計として組み込むことを第一に考えている。
                 </p>
               </li>
               <li className="mt-[3rem] w-full lg:max-w-[28vw]">
                 <p className="font-zenKakuNew text-black-primary leading-[1.6] text-base-size flex gap-[1rem] before:content-['03)'] before:text-[0.875rem]">
-                  技術面においては、比較的にモダンなものにも興味を持っており、YouTubeやZennなどで情報をキャッチアップしている。
+                  技術面においては、モダンな技術への関心を持ちながら、その技術を素材としてどう扱うことが最適かを常に考えている。
                 </p>
               </li>
             </ul>
