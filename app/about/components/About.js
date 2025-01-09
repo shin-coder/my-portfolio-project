@@ -242,7 +242,8 @@ function About() {
             <ul className="lg:mt-[5rem] lg:flex lg:flex-wrap lg:justify-between">
               <li className="mt-[3rem] w-full lg:max-w-[28vw]">
                 <p className="font-zenKakuNew text-black-primary leading-[1.6] text-base-size flex gap-[1rem] before:content-['01)'] before:text-[0.875rem]">
-                  機能的でシンプルなデザインを好むため、静止画としても美しく見えるよう実装を心がけている。
+                  機能的でありながらもユーザー体験も意識したデザインを好むため、
+                  単に見た目が綺麗ではなく、使いやすや心が躍るような設計を意識している。
                   <br></br>
                   また、デザインの意図を把握し、その本質を実装に反映させることを重視している。
                 </p>
