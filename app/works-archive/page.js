@@ -28,7 +28,7 @@ function Page() {
               start: "10% bottom",
               // markers: true,
               onEnter: () => {
-                scrambleText(element, finalText, 0);
+                scrambleText(element, finalText);
               },
             },
           })

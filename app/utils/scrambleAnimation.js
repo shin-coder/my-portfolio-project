@@ -1,23 +1,17 @@
-export const scrambleText = (element, finalText, iteration) => {
-  const characters = "qwertyuiop@[asdfghjkl;:]zxcvbnm,./_";
-  const maxIterations = 8;
-  const progress = Math.min(iteration / maxIterations, 1);
+import gsap from "gsap";
+import { ScrambleTextPlugin } from "gsap/ScrambleTextPlugin";
 
-  const text = finalText
-    .split("")
-    .map((char, index) => {
-      if (progress > index / finalText.length) {
-        return char;
-      }
-      return characters[Math.floor(Math.random() * characters.length)];
-    })
-    .join("");
+gsap.registerPlugin(ScrambleTextPlugin);
 
-  if (element.innerText !== text) {
-    element.innerText = text;
-  }
-
-  if (iteration < maxIterations) {
-    setTimeout(() => scrambleText(element, finalText, iteration + 1), 40);
-  }
+export const scrambleText = (element, finalText) => {
+  gsap.to(element, {
+    duration: 0.32,
+    scrambleText: {
+      text: finalText ?? element.textContent,
+      chars: "qwertyuiop@[asdfghjkl;:]zxcvbnm,./_",
+      revealDelay: 0,
+      speed: 1,
+    },
+    overwrite: true,
+  });
 };
