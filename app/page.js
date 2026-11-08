@@ -64,7 +64,7 @@ export default function Home() {
                 start: "center 97.5%",
                 // markers: true,
                 onEnter: () => {
-                  scrambleText(element, finalText, 0);
+                  scrambleText(element, finalText);
                 },
               },
             })
